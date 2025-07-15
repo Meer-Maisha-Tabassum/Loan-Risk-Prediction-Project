@@ -1,54 +1,47 @@
-````markdown
 # Loan Risk Prediction
 
 ## Project Overview
 
 This project leverages various advanced techniques for loan risk prediction, focusing on data quality, causality, and explainability. Using ydata-profiling, comprehensive reports were generated to assess data quality and facilitate exploratory data analysis (EDA). Granger causality analysis identified significant predictors of loan status, informing feature selection. The DoWhy library was used to build causal models, distinguishing true causative effects from correlations and providing valuable insights for loan risk management. Explainable AI was integrated with a Decision Tree classifier to enhance transparency and trustworthiness in model decisions.
 
----
+-----
 
 ## Project Content
 
 1.  **Import Necessary Libraries**
 2.  **Data Preparation and Exploration**
-    * 2.1 Identifying Null Values
-    * 2.2 Handle Null values
-    * 2.3 Handle Date Columns
-    * 2.4 Handle Boolean Features
-    * 2.5 Target Variable Defining
-    * 2.6 Handling Rest of the Missing Values Before Encoding
-    * 2.7 Feature Importance
-    * 2.8 Feature Selection
+      * 2.1 Identifying Null Values
+      * 2.2 Handle Null values
+      * 2.3 Handle Date Columns
+      * 2.4 Handle Boolean Features
+      * 2.5 Target Variable Defining
+      * 2.6 Handling Rest of the Missing Values Before Encoding
+      * 2.7 Feature Importance
+      * 2.8 Feature Selection
 3.  **Data Visualization**
 4.  **Granger Causality Matrix**
-    * 4.1 Matrix
-    * 4.2 Matrix Visualization
-    * 4.3 Feature Significance from Granger Causality
+      * 4.1 Matrix
+      * 4.2 Matrix Visualization
+      * 4.3 Feature Significance from Granger Causality
 5.  **Causal AI Analysis with DoWhy Library**
-    * 5.1 Positive Causal Effect
-    * 5.2 Negative Causal Effect
+      * 5.1 Positive Causal Effect
+      * 5.2 Negative Causal Effect
 6.  **Data Splitting**
 7.  **Sensible Model Training**
 8.  **Model Visualization and Evidence**
 9.  **Predicted Loan Risk on an Applicant**
 10. **Explainable AI**
-    * 10.1 Classification Report
-    * 10.2 Tree Diagram
+      * 10.1 Classification Report
+      * 10.2 Tree Diagram
 11. **Model Validation**
 
----
+-----
 
 ## Installation
 
-To run this notebook, you need to have Python and the following libraries installed. You can install them using pip:
+To run this notebook, you need to have Python and the following libraries installed. You can create a `requirements.txt` file with the following content:
 
-```bash
-pip install -r requirements.txt
-````
-
-**requirements.txt:**
-
-```
+```text
 warnings
 pandas
 numpy
@@ -64,13 +57,19 @@ statsmodels
 concurrent-futures
 ```
 
+Then, install the dependencies by running the following command in your terminal:
+
+```bash
+pip install -r requirements.txt
+```
+
 -----
 
 ## Usage
 
 1.  Clone the repository:
     ```bash
-    git clone [https://github.com/your-username/loan-risk-prediction.git](https://github.com/your-username/loan-risk-prediction.git)
+    git clone https://github.com/your-username/loan-risk-prediction.git
     cd loan-risk-prediction
     ```
 2.  Place the datasets (`loan.csv`, `payment.csv`, `clarity_underwriting_variables.csv`) in the root directory.
@@ -136,6 +135,3 @@ Contributions are welcome\! Please feel free to submit a pull request.
 ## License
 
 This project is licensed under the MIT License.
-
-```
-```
